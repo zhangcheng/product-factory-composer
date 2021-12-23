@@ -10,13 +10,13 @@
 [data model diagram](https://github.com/OpenUnited/product-factory-composer/blob/master/docs/diagrams/openunited-data-model%20v1.0.png)
 
 ## Design Choices
-A concept called "ProductMap" defines what a product does. The ProductMap comprises a set of nested Capabilities in a tree-like structure. ProductMap helps to ensure that people understand what a product does, which sounds obvious however to date frameworks have only focussed on the work to be done and not what the product does.
+A concept called "ProductTree" defines what a product does. The ProductTree comprises a set of nested Capabilities in a tree-like structure. ProductTree helps to ensure that people understand what a product does, which sounds obvious however to date frameworks have only focussed on the work to be done and not what the product does.
 
-The work to be done on a product is organised separately to the ProductMap but in a related way.  The units of work are defined as Tasks, and these are grouped into Initiatives. 
+The work to be done on a product is organised separately to the ProductTree but in a related way.  The units of work are defined as Tasks, and these are grouped into Initiatives. 
 
-Whilst we deliberately separate what the product does (ProductMap) from the work (Initiatives/Tasks) to be done, these are related:
+Whilst we deliberately separate what the product does (ProductTree) from the work (Initiatives/Tasks) to be done, these are related:
 
-* Initiatives belong to a Capability in the ProductMap
+* Initiatives belong to a Capability in the ProductTree
 * An Initiative's Tasks are by default related to the same Capability as that Initiative
 * The Capability-Task relationship can be overriden, Tasks are allowed to relate to a different Capability than their Initiative if desired
 
