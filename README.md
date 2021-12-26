@@ -1,10 +1,5 @@
 # OpenUnited MarketPlace
 
-| Build Status |  |
-| ------------ | -----------|
-| Frontend | [![frontend](https://circleci.com/gh/OpenUnited/product-factory-frontend.svg?style=shield&circle-token=870e198fa4ad5e9846198223574687b93bbfdd2a)](https://app.circleci.com/pipelines/github/OpenUnited/product-factory-frontend) |
-| Backend | [![backend](https://circleci.com/gh/OpenUnited/product-factory-backend.svg?style=shield&circle-token=c42f3202c09de088eca92580c5aced8f2da712a1)](https://app.circleci.com/pipelines/github/OpenUnited/product-factory-backend) |
-
 ## Data Model
 
 [data model diagram](https://github.com/OpenUnited/product-factory-composer/blob/master/docs/diagrams/openunited-data-model%20v1.0.png)
