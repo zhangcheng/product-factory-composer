@@ -5,9 +5,10 @@
 [data model diagram](https://github.com/OpenUnited/product-factory-composer/blob/master/docs/diagrams/openunited-data-model%20v1.0.png)
 
 ## Design Choices
+
 A concept called "ProductTree" defines what a product does. The ProductTree comprises a set of nested Capabilities in a tree-like structure. ProductTree helps to ensure that people understand what a product does, which sounds obvious however to date frameworks have only focussed on the work to be done and not what the product does.
 
-The work to be done on a product is organised separately to the ProductTree but in a related way.  The units of work are defined as Tasks, and these are grouped into Initiatives. 
+The work to be done on a product is organised separately to the ProductTree but in a related way.  The units of work are defined as Tasks, and these are grouped into Initiatives.
 
 Whilst we deliberately separate what the product does (ProductTree) from the work (Initiatives/Tasks) to be done, these are related:
 
@@ -43,9 +44,9 @@ Capability is a way of breaking down the functional and non-functional areas of 
   * Smart Recommentations
   * A/B Testing
   * Serverys
-    
+
 ### Task
-Tasks are units of work to be done. Tasks are grouped into Initiatives and both Tasks and Initiatives relate to a capability in the ProductMap. 
+Tasks are units of work to be done. Tasks are grouped into Initiatives and both Tasks and Initiatives relate to a capability in the ProductMap.
 
 For example, a Task might be: As a user, I want to be able to tag contacts. Implement the ability for contacts to be tagged in the UI and backend.
 
@@ -95,7 +96,7 @@ LICENSE_FILE=developer.license
 LICENSE_PUB_KEY=developer.license_key.pub
 ```
 
-if after starting the project in the console the error is: "Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS", and frontend crashes after first render.
+If after starting the project in the console the error is: "Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS", and frontend crashes after first render.
 1. Create a local_settings.py under product-factory-composer/backend/backend folder.
 2. Add the following codes.
 ```
@@ -126,6 +127,7 @@ docker-compose exec frontend npm test
 ```
 
 ## Github integration
+
 1. Create a local_settings.py under backend/backend folder.
 2. Add the following codes.
 ```
