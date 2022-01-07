@@ -90,7 +90,7 @@ docker-compose exec backend python manage.py createsuperuser
 7. The admin panel is available [http://0.0.0.0:8080/admin](http://0.0.0.0:8080/admin)
 
 8. The application works in development mode (max 2 products & 5 users/persons).
-The server needs two license files to be present before you can run it. You can find the developer license files in the repository. They are `developer.license` and `developer.license_key.pub`. You need to point to these two files in the `.env` file. Corresponding env variable names are `LICENSE_FILE` and `LICENSE_PUB_KEY`. After you make the changes, the last two lines of your `.env` file should be like this:
+The server requires two license files to be present before you can run it. You can find the developer license files in the `backend` repository. They are `developer.license` and `developer.license_key.pub`. You need to point to these two files in the `.env` file. Corresponding env variable names are `LICENSE_FILE` and `LICENSE_PUB_KEY`. After you make the changes, the last two lines of your `.env` file should be like this:
 ```
 LICENSE_FILE=developer.license
 LICENSE_PUB_KEY=developer.license_key.pub
