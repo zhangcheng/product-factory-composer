@@ -62,7 +62,7 @@ git submodule init
 git submodule update
 ```
 
-NOTE: `git submodule update` clones using SSH links. If you are having trouble with the command manually - e.g. you haven't set-up SSH keys in your GitHub account - clone using HTTPS links:
+NOTE: `git submodule update` clones using SSH links. If you are having trouble with the command manually - e.g. you haven't [set-up SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) in your GitHub account - clone using HTTPS links:
 ```
 git clone https://github.com/OpenUnited/product-factory-backend.git backend
 git clone https://github.com/OpenUnited/product-factory-frontend.git frontend
