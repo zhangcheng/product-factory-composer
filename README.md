@@ -65,7 +65,7 @@ git submodule update
 NOTE: `git submodule update` clones using SSH links. If you are having trouble with the command manually - e.g. you haven't set-up SSH keys in your GitHub account - clone using HTTPS links:
 ```
 git clone https://github.com/OpenUnited/product-factory-backend.git backend
-git clone https://github.com/OpenUnited/product-factory-frontend/tree/b0b5fafd1758647c73debf82d424f2ed603188d9 frontend
+git clone https://github.com/OpenUnited/product-factory-frontend.git frontend
 ```
 
 2. Create backend/.env file from backend/.env.template and update the file variables with your information.
