@@ -20,7 +20,7 @@ New to forking? Here is some [general forking info](https://docs.github.com/en/g
 
 Clone your fork of the Composer repo to your development computer via SSH. This will mean running for example:
 
-git clone git@github.com:yourusername/product-factory-composer.git
+git clone git@github.com:*yourusername*/product-factory-composer.git
 
 where "yourusername" is replaced with your github username :-)
 
