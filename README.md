@@ -31,7 +31,7 @@ Edit the file *product-factory-composer/.gitmodules* locally, updating the "url"
 
 **Step 5**: Continue with "How to run the project" as described below. 
 
-Questions? Please visit #tech-setup-troubleshooting on the [OpenUnited Discord Server](https://discord.com/invite/T3xevYvWey).
+Questions? Please [accept our invitation](https://discord.com/invite/T3xevYvWey) to join the [OpenUnited Discord Server](https://discord.com/invite/T3xevYvWey) and then visit the [#tech-setup-troubleshooting](https://discord.com/channels/910309960477446244/929010516666503208) channel and ask for assistance.
 
 ## How to run the project
 
