@@ -2,7 +2,7 @@
 
 ## Git Setup and Forking Instructions
 
-**Step 1**: Please ensure you have git and ssh setup, and Github knows who you are! To test this, run the following in the terminal:
+**Step 1**: Please ensure you have git and ssh setup, and that Github knows who you are via ssh through the magic of keys! To test this, run the following in the terminal:
 
 ssh -T git@github.com
 
