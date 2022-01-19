@@ -16,9 +16,9 @@ Github should respond by indicating your username. If this doesn't happen, then 
 
 Need some [general info on forking](https://docs.github.com/en/get-started/quickstart/fork-a-repo)?
 
-**Step 3**: Clone your "Composer fork"
+**Step 3**: Clone your "Composer fork" (SSH recommended)
 
-Clone your fork of the Composer repo to your development computer. This will mean running for example:
+Clone your fork of the Composer repo to your development computer via SSH. This will mean running for example:
 
 git clone git@github.com:yourusername/product-factory-composer.git
 
