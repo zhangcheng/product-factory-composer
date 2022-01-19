@@ -1,59 +1,37 @@
-# OpenUnited MarketPlace
+# OpenUnited
 
-## Data Model
+## Git Setup and Forking Instructions
 
-[data model diagram](https://github.com/OpenUnited/product-factory-composer/blob/master/docs/diagrams/openunited-data-model%20v1.0.png)
+**Step 1**: Please ensure you have ssh setup and Github knows who you are! To test this, run the following in the terminal:
 
-## Design Choices
+ssh -T git@github.com
 
-A concept called "ProductTree" defines what a product does. The ProductTree comprises a set of nested Capabilities in a tree-like structure. ProductTree helps to ensure that people understand what a product does, which sounds obvious however to date frameworks have only focussed on the work to be done and not what the product does.
+Github should respond by indicating your username. If this doesn't happen, then please follow [these instructions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh). 
 
-The work to be done on a product is organised separately to the ProductTree but in a related way.  The units of work are defined as Tasks, and these are grouped into Initiatives.
+**Step 2**: via github.com, fork all three of the repositories:
 
-Whilst we deliberately separate what the product does (ProductTree) from the work (Initiatives/Tasks) to be done, these are related:
+1. Composer: https://github.com/OpenUnited/product-factory-composer
+2. Backend: https://github.com/OpenUnited/product-factory-backend
+3. Frontend: https://github.com/OpenUnited/product-factory-frontend
 
-* Initiatives belong to a Capability in the ProductTree
-* An Initiative's Tasks are by default related to the same Capability as that Initiative
-* The Capability-Task relationship can be overriden, Tasks are allowed to relate to a different Capability than their Initiative if desired
+[More info on forking](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
 
-### Capability
-Capability is a way of breaking down the functional and non-functional areas of the product. The nested set of Capabilities related to a Product is referred to as the ProductMap.  An example ProductMap from Mailchimp:
+**Step 3**: Clone your "Composer fork"
 
-* Audience Management
-  * Marketing CRM
-    * Audience dashboard
-    * Import contacts
-    * Export data
-    * Segmentation tool
-  * Signup Forms
-  * Segmentation
-  * Behavioral Targeting
-  * Predicted Demographics
-* Creative Tools
-  * Content Studio
-  * Creative Assistant (Beta)
-  * Dynamic Content
-  * Subject Line Helper
-  * Campaign Templates
-* Marketing Automation
-  * Customer Journeys
-  * Integration
-  * Transactional Email
-* Insight & Analytics
-  * Reports
-  * Smart Recommentations
-  * A/B Testing
-  * Serverys
+Clone your fork of the Composer repo to your development computer. This will mean running for example:
 
-### Task
-Tasks are units of work to be done. Tasks are grouped into Initiatives and both Tasks and Initiatives relate to a capability in the ProductMap.
+git clone git@github.com:yourusername/product-factory-composer.git
 
-For example, a Task might be: As a user, I want to be able to tag contacts. Implement the ability for contacts to be tagged in the UI and backend.
+where "yourusername" is replaced with your github username :-)
 
-### Initiative
-Initiatives are a group of Tasks that relate to each other. Each initiative belongs to a Capability and can have multiple Tasks. The stories by default have their initiative's Category.
+**Step 4**: Change your composer fork to point to your forks of the frontend and backend repos
 
-For example, an Initiative might be: Create new Admin Console
+Edit the file *product-factory-composer/.gitmodules* locally, updating the "url" parameter of the backend and frontend to refer to your forks. This simply means changing "OpenUnited" to your github username.
+
+
+**Step 5**: Continue with "How to run the project" as described below. 
+
+Questions? Please visit #tech-setup-troubleshooting on the [OpenUnited Discord Server](https://discord.com/invite/T3xevYvWey).
 
 ## How to run the project
 
@@ -132,19 +110,57 @@ docker-compose exec backend pytest
 docker-compose exec frontend npm test
 ```
 
-## Github integration
+## Data Model
 
-1. Create a local_settings.py under backend/backend folder.
-2. Add the following codes.
-```
-GIT_ACCESS_TOKEN = "<GIT_ACCESS_TOKEN>"
-GIT_OWNER = "<GIT_USERNAME>"
-DOMAIN = "<lt domain>"
-ALLOWED_HOSTS = ["<lt domain>", "localhost:8000", "localhost:3000", "localhost", "127.0.0.1"]
-SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
-CORS_ORIGIN_WHITELIST = [
-    'http://localhost:3000'
-]
-```
-3. How to get lt domain? Please check how to use [localtunnel](https://github.com/localtunnel/localtunnel).
-4. Replace it with domain created by localtunnel.
+[data model diagram](https://github.com/OpenUnited/product-factory-composer/blob/master/docs/diagrams/openunited-data-model%20v1.0.png)
+
+## Design Choices
+
+A concept called "ProductTree" defines what a product does. The ProductTree comprises a set of nested Capabilities in a tree-like structure. ProductTree helps to ensure that people understand what a product does, which sounds obvious however to date frameworks have only focussed on the work to be done and not what the product does.
+
+The work to be done on a product is organised separately to the ProductTree but in a related way.  The units of work are defined as Tasks, and these are grouped into Initiatives.
+
+Whilst we deliberately separate what the product does (ProductTree) from the work (Initiatives/Tasks) to be done, these are related:
+
+* Initiatives belong to a Capability in the ProductTree
+* An Initiative's Tasks are by default related to the same Capability as that Initiative
+* The Capability-Task relationship can be overriden, Tasks are allowed to relate to a different Capability than their Initiative if desired
+
+### Capability
+Capability is a way of breaking down the functional and non-functional areas of the product. The nested set of Capabilities related to a Product is referred to as the ProductMap.  An example ProductMap from Mailchimp:
+
+* Audience Management
+  * Marketing CRM
+    * Audience dashboard
+    * Import contacts
+    * Export data
+    * Segmentation tool
+  * Signup Forms
+  * Segmentation
+  * Behavioral Targeting
+  * Predicted Demographics
+* Creative Tools
+  * Content Studio
+  * Creative Assistant (Beta)
+  * Dynamic Content
+  * Subject Line Helper
+  * Campaign Templates
+* Marketing Automation
+  * Customer Journeys
+  * Integration
+  * Transactional Email
+* Insight & Analytics
+  * Reports
+  * Smart Recommentations
+  * A/B Testing
+  * Serverys
+
+### Task
+Tasks are units of work to be done. Tasks are grouped into Initiatives and both Tasks and Initiatives relate to a capability in the ProductMap.
+
+For example, a Task might be: As a user, I want to be able to tag contacts. Implement the ability for contacts to be tagged in the UI and backend.
+
+### Initiative
+Initiatives are a group of Tasks that relate to each other. Each initiative belongs to a Capability and can have multiple Tasks. The stories by default have their initiative's Category.
+
+For example, an Initiative might be: Create new Admin Console
