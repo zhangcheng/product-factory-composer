@@ -6,7 +6,7 @@
 
 ssh -T git@github.com
 
-Github should respond by indicating your username. If this doesn't happen, then please follow [these instructions for connecting to github with ssh](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) or these general [git setup instructions](https://docs.github.com/en/get-started/quickstart/set-up-git).
+Github should respond by indicating your username. If this doesn't happen, then please follow [these instructions for connecting to github with ssh](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) or these general [git setup instructions](https://docs.github.com/en/get-started/quickstart/set-up-git). These instructions on how to [set-up SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) in your Github account may also be helpful.
 
 **Step 2**: in your web browser via github.com, fork all three of the repositories:
 
@@ -40,13 +40,6 @@ Questions? Please [accept our invitation](https://discord.com/invite/T3xevYvWey)
 git submodule init
 git submodule update
 ```
-
-NOTE: `git submodule update` clones using SSH links. If you are having trouble with the command manually - e.g. you haven't [set-up SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) in your GitHub account - clone using HTTPS links:
-```
-git clone https://github.com/OpenUnited/product-factory-backend.git backend
-git clone https://github.com/OpenUnited/product-factory-frontend.git frontend
-```
-
 2. Create backend/.env file from backend/.env.template and update the file variables with your information.
 ```
 cp backend/.env.template backend/.env
