@@ -2,11 +2,11 @@
 
 ## Git Setup and Forking Instructions
 
-**Step 1**: Please ensure you have ssh setup and Github knows who you are! To test this, run the following in the terminal:
+**Step 1**: Please ensure you have git and ssh setup, and Github knows who you are! To test this, run the following in the terminal:
 
 ssh -T git@github.com
 
-Github should respond by indicating your username. If this doesn't happen, then please follow [these instructions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh). 
+Github should respond by indicating your username. If this doesn't happen, then please follow [these instructions for connecting to github with ssh](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) or these general [git setup instructions](https://docs.github.com/en/get-started/quickstart/set-up-git).
 
 **Step 2**: via github.com, fork all three of the repositories (selecting SSH is suggested):
 
