@@ -8,13 +8,13 @@ ssh -T git@github.com
 
 Github should respond by indicating your username. If this doesn't happen, then please follow [these instructions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh). 
 
-**Step 2**: via github.com, fork all three of the repositories:
+**Step 2**: via github.com, fork all three of the repositories (selecting SSH is suggested):
 
 1. Composer: https://github.com/OpenUnited/product-factory-composer
 2. Backend: https://github.com/OpenUnited/product-factory-backend
 3. Frontend: https://github.com/OpenUnited/product-factory-frontend
 
-[More info on forking](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
+Need some [general info on forking](https://docs.github.com/en/get-started/quickstart/fork-a-repo)?
 
 **Step 3**: Clone your "Composer fork"
 
