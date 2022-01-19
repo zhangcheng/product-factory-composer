@@ -14,7 +14,7 @@ Github should respond by indicating your username. If this doesn't happen, then 
 2. Backend: https://github.com/OpenUnited/product-factory-backend
 3. Frontend: https://github.com/OpenUnited/product-factory-frontend
 
-Need some [general info on forking](https://docs.github.com/en/get-started/quickstart/fork-a-repo)?
+New to forking? Here is some [general forking info](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
 
 **Step 3**: Clone your "Composer fork" (SSH recommended)
 
