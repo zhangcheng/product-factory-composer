@@ -8,7 +8,7 @@ ssh -T git@github.com
 
 Github should respond by indicating your username. If this doesn't happen, then please follow [these instructions for connecting to github with ssh](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) or these general [git setup instructions](https://docs.github.com/en/get-started/quickstart/set-up-git).
 
-**Step 2**: in your web browser via github.com, fork all three of the repositories (selecting SSH is suggested):
+**Step 2**: in your web browser via github.com, fork all three of the repositories:
 
 1. Composer: https://github.com/OpenUnited/product-factory-composer
 2. Backend: https://github.com/OpenUnited/product-factory-backend
