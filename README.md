@@ -6,7 +6,7 @@
 
 ssh -T git@github.com
 
-Github should respond by indicating your username. If this doesn't happen, then please follow [these instructions for connecting to github with ssh](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) or these general [git setup instructions](https://docs.github.com/en/get-started/quickstart/set-up-git). You may also need to add your SSH key to [your settings](https://github.com/settings/keys) in your Github account.
+Github should give a response that includes your username. If this doesn't happen, then please follow [these instructions for connecting to github with ssh](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) or these general [git setup instructions](https://docs.github.com/en/get-started/quickstart/set-up-git). You may also need to add your SSH key to [your settings](https://github.com/settings/keys) in your Github account.
 
 **Step 2**: in your web browser via github.com, fork all three of the repositories:
 
