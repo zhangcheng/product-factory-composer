@@ -8,6 +8,7 @@ ssh -T git@github.com
 
 Github should give a response that includes your username. If this doesn't happen, then please follow [these instructions for connecting to github with ssh](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) or these general [git setup instructions](https://docs.github.com/en/get-started/quickstart/set-up-git). You may also need to add your SSH key to [your settings](https://github.com/settings/keys) in your Github account.
 
+
 **Step 2**: in your web browser via github.com, fork all three of the repositories:
 
 1. Composer: https://github.com/OpenUnited/product-factory-composer
@@ -15,6 +16,7 @@ Github should give a response that includes your username. If this doesn't happe
 3. Frontend: https://github.com/OpenUnited/product-factory-frontend
 
 New to forking? Here is some [general forking info](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
+
 
 **Step 3**: Clone your "Composer fork" (SSH recommended)
 
@@ -24,14 +26,18 @@ git clone git@github.com:*yourusername*/product-factory-composer.git
 
 where "yourusername" is replaced with your github username :-)
 
-**Step 4**: Change your composer fork to point to your forks of the frontend and backend repos
 
-Edit the file *product-factory-composer/.gitmodules* locally, updating the "url" parameter of the backend and frontend to refer to your forks. This simply means changing "OpenUnited" to your github username.
+**Step 4**: Reconfigure your composer fork, so it references your forks of the frontend and backend repos.
+
+The composer repo has git submodules of the frontend and backend. In this step, you will reconfigure your fork of the composer repository so that the git submodules it references are your forks of the backend and frontend.
+
+Edit the file *product-factory-composer/.gitmodules* locally, updating the "url" parameter of the backend and frontend in this text file to refer to your forks of the backend and frontend. In practice, this simply means changing "OpenUnited" to your github username for the URLs in the .gitmodules file.
 
 
 **Step 5**: Continue with "How to run the project" as described below. 
 
 Questions? Please [accept our invitation](https://discord.com/invite/T3xevYvWey) to join the [OpenUnited Discord Server](https://discord.com/invite/T3xevYvWey) and then visit the [#tech-setup-troubleshooting](https://discord.com/channels/910309960477446244/929010516666503208) channel and ask for assistance.
+
 
 ## How to run the project
 
